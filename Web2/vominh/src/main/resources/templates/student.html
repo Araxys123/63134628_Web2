@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+</head>
+<body>
+    <h1>Students</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ten</th>
+                <th>Lop</th>
+                <th>Khoa</th>
+                <th>Truong</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="student : ${students}">
+                <td th:text="${student.id}"></td>
+                <td th:text="${student.ten}"></td>
+                <td th:text="${student.lop}"></td>
+                <td th:text="${student.khoa}"></td>
+                <td th:text="${student.truong}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/students/new">Thêm SV mới</a>
+    <a href="/students/search">Tìm kiếm</a>
+</body>
+</html>
