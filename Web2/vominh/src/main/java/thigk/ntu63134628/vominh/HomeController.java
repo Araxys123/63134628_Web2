@@ -23,7 +23,7 @@ public class HomeController {
 
         // Cards Bootstrap
         List<Student> students = new ArrayList<>();
-        students.add(new Student("Võ Minh", "63.CNTT-CLC", "Web2", "Nha Trang University", "avatar1.jpg"));
+        students.add(new Student("Võ Minh", "63.CNTT-CLC", "Web2", "Nha Trang University"));
         model.addAttribute("students", students);
 
         return "index";
