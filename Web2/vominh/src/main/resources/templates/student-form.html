@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thêm sinh viên</title>
+</head>
+<body>
+    <h1>Thêm sinh viên</h1>
+    <form method="post" action="/students">
+        <label>ID:</label>
+        <input type="text" th:field="${student.id}" /><br/>
+        <label>Ten:</label>
+        <input type="text" th:field="${student.ten}" /><br/>
+        <label>Lop:</label>
+        <input type="text" th:field="${student.lop}" /><br/>
+        <label>Khoa:</label>
+        <input type="text" th:field="${student.khoa}" /><br/>
+        <label>Truong:</label>
+        <input type="text" th:field="${student.truong}" /><br/>
+        <button type="submit">Xác nhận</button>
+    </form>
+</body>
+</html>

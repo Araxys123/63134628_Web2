@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kết quả tìm kiếm</title>
+</head>
+<body>
+    <h1>Kết quả tìm kiếm</h1>
+    <div th:if="${student != null}">
+        <p>ID: <span th:text="${student.id}"></span></p>
+        <p>Ten: <span th:text="${student.ten}"></span></p>
+        <p>Lop: <span th:text="${student.lop}"></span></p>
+        <p>Khoa: <span th:text="${student.khoa}"></span></p>
+        <p>Truong: <span th:text="${student.truong}"></span></p>
+    </div>
+    <div th:unless="${student != null}">
+        <p>Không tìm thấy sinh viên có cùng ID</p>
+    </div>
+</body>
+</html>
