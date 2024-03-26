@@ -3,7 +3,7 @@ package thigk.ntu63134628.vominh;
 public class Student {
 	private String ten;
 	private String lop;
-    private String monHoc;
+    private String khoa;
     private String truong;
 	public String getTen() {
 		return ten;
@@ -17,11 +17,11 @@ public class Student {
 	public void setLop(String lop) {
 		this.lop = lop;
 	}
-    public String getMonHoc() {
-		return monHoc;
+    public String getKhoa() {
+		return khoa;
 	}
-	public void setMonHoc(String monHoc) {
-		this.monHoc = monHoc;
+	public void setKhoa(String khoa) {
+		this.khoa = khoa;
 	}
 	public String getTruong() {
 		return truong;
@@ -29,10 +29,10 @@ public class Student {
 	public void setTruong(String truong) {
 		this.truong = truong;
 	}
-	public Student(String ten, String lop, String monHoc, String truong) {
+	public Student(String ten, String lop, String khoa, String truong) {
 		this.ten = ten;
 		this.lop = lop;
-        this.monHoc = monHoc;
+        this.khoa = khoa;
         this.truong = truong;
 	}
 }
