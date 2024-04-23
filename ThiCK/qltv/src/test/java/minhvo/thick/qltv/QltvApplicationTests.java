@@ -1,10 +1,10 @@
-package minhvo.DisplayListObject;
+package minhvo.thick.qltv;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DisplayListObjectApplicationTests {
+class QltvApplicationTests {
 
 	@Test
 	void contextLoads() {
